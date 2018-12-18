@@ -14,9 +14,12 @@ ul.sidenav {
     text-align: center;
     padding: 0;
     width: 100%;  
+    left: 0px;
     background-color: #dddddd;
-    position: sticky;
     overflow: auto;
+    position: fixed;
+    top: 0px
+
 }
 ul.sidenav li a {
     display: inline-block;
@@ -41,14 +44,11 @@ ul.sidenav li a:hover:not(.active) {
 @media screen and (max-width: 9000px) {
     ul.sidenav {
         width: 100%;
-        position: relative;
-    }
-  
+    }  
     ul.sidenav li a {
         float: left;
         padding: 15px;
-    }   
-    
+    }       
     div.content {margin-left: 0;}
 }
 @media screen and (max-width: 400px) {
@@ -64,7 +64,6 @@ ul.footbar {
     padding: 0px;
     list-style: none;
     font-weight: bold;  
- 
 }
 ul.footbar li {
     display: inline;
