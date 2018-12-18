@@ -1,6 +1,6 @@
 body {
     margin: 60px auto;
-    width: 70%;
+    width: 100%;
     background-color: #f6f5f3;
 }
 
@@ -9,7 +9,6 @@ ul.sidenav {
     padding: 0px;
     list-style: none;
     font-weight: bold;
-    list-style-type: none;
     margin: 0;
     padding: 0;
     width: 25%;
