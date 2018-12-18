@@ -3,34 +3,62 @@ body {
     width: 70%;
     background-color: #f6f5f3;
 }
-nav ul, footer ul {
+
+ul.sidenav {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+ul.footbar {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
     font-weight: bold;
 }
-nav ul li{
+
+ul.sidenav li{
     display: inline;
     margin-right: 20px;
     background-color: #393939;
 }
-footer ul li {
+
+ul.footbar li {
     display: inline;
     margin-right: 20px;
 }
-nav ul li a {
+
+ul.sidenav a {
     text-decoration: none;
     color: #999;
 }
-nav ul li a:hover:not(.active) {
+ul.sidenav li a:hover:not(.active) {
   background-color: green;
   color: white;
 }
-a:hover {
+
+ul.sidenav a:hover {
     text-decoration: underline;
     background-color: #4CAF50;
     color: white;
 }
+
+footer {
+    border-top: 1px solid #d5d5d5;
+    font-size: .8em;
+}
+
+
+
 h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -40,11 +68,6 @@ p {
     line-height: 1.4em;
     color: #333;
 }
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
-}
-
 ul.posts { 
     margin: 20px auto 40px; 
     font-size: 1.5em;
