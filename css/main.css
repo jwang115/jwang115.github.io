@@ -1,31 +1,13 @@
 img {
-  border-radius: 100%;
-  box-shadow: 0 0 10px #c2c0c0;
+    border-radius: 100%;
+    box-shadow: 0 0 10px #c2c0c0;
 }
-.responsive {
-  width: 55%;
-  max-width: 100%;
-  height: auto;
-}
-.img:hover  {
-  cursor: pointer;
-  -webkit-transform:scale($scale); /* Safari and Chrome */
-  -moz-transform:scale($scale); /* Firefox */
-  -ms-transform:scale($scale); /* IE 9 */
-  -o-transform:scale($scale); /* Opera */
-  transform:scale($scale);
-}
-
-
-
 
 body {
     margin: 140px auto; 
     width: 70%;
     background-color: #f8f7f6;
 }
-
-
 
 ul.topnav {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
