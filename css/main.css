@@ -4,7 +4,7 @@ img {
 }
 
 body {
-    margin: 140px auto; 
+    margin: 75px auto; 
     width: 70%;
     background-color: #f8f7f6;
 }
@@ -23,7 +23,7 @@ ul.topnav {
     background-color: #dddddd;
     border: 1px solid #999595;
 
-    top: 50px;
+    top: 20px;
     position: absolute;
 
 }
@@ -50,7 +50,7 @@ ul.topnav li a:hover:not(.active) {
     }
 }      
 .fixed-header {
-    top: -50px;
+    top: -20px;
     position: fixed;
     width: 100%; 
 }
@@ -111,6 +111,3 @@ ul.posts li {
     list-style: none;
     text-decoration: none;
 }
-
-
-
