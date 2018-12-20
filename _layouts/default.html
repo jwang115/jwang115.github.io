@@ -31,16 +31,18 @@
 		</ul>
 		</footer>			
 	<script>
-	window.onscroll = function() {myFunction()};
-	var topnav = document.getElementById("myTopnav");
-	var sticky = topnav.offsetTop;
-	function myFunction() {
-  		if (window.pageYOffset > sticky) {
-    			topnav.classList.add("sticky");
-  		} else {
-    			topnav.classList.remove("sticky");
-  		}
-	}
+	$window = $(window);
+	$window.scroll(function() {
+  	$scroll_position = $window.scrollTop();
+    		if ($scroll_position > 50) { 
+        		$('.your-header').addClass('sticky');
+		       header_height = $('.your-header').innerHeight();
+        		$('body').css('padding-top' , header_height);
+    		} else {
+        		$('body').css('padding-top' , '0');
+        		$('.your-header').removeClass('sticky');
+    		}
+ 	});
 	</script>		
 	</body>
 </html>
