@@ -1,13 +1,13 @@
 // Function for sticky header
 window.onscroll = function() {myFunction()};
 
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
+var topnav = document.getElementById("myTopnav");
+var sticky = topnav.offsetTop;
 
 function myFunction() {
   if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
+    topnav.classList.add("sticky");
   } else {
-    header.classList.remove("sticky");
+    topnav.classList.remove("sticky");
   }
 }
