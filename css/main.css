@@ -24,7 +24,7 @@ ul.topnav {
     border: 1px solid #999595;
 
     top: 50px;
-    position: fixed;
+    position: absolute;
 
 }
 ul.topnav li {float: left;}
@@ -49,6 +49,11 @@ ul.topnav li a:hover:not(.active) {
         margin: 290px auto; 
     }
 }      
+.fixed-header {
+    top: -50px;
+    position: fixed;
+    width: 100%; 
+}
 
 
 ul.topnav a {
@@ -106,3 +111,6 @@ ul.posts li {
     list-style: none;
     text-decoration: none;
 }
+
+
+
