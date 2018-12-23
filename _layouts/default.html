@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 	<html>
+	<!--
+	Jeremy Wang personal website
+	-->
 		<head>
+			<meta charset="utf-8">	
 			<title>{{ page.title }}</title>
+			<!-- link to css bootstrap -->
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+			<!-- link to javascript bootstrap -->
+			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+			<!-- link to favicons -->
 			<link rel="icon" href="https://qiliang15.github.io/favicon.ico">
 			<link rel="shortcut icon" href="https://qiliang15.github.io/favicon.ico">			
 			<!-- link to main stylesheet -->
@@ -10,11 +19,12 @@
 		<body>
 			<nav>
 	    		<ul class="topnav">
-	        		<li><a href="/">Home</a></li>
-		        	<li><a href="/about">About</a></li>
-	        		<li><a href="/resume">Resume</a></li>
-				<li><a href="/music">Music</a></li>
-				<li><a href="/video-editing">Video Editing</a></li>
+	        		<li><a {{ page.home }} href="/">Home</a></li>
+		        	<li><a {{ page.about }} href="/about">About</a></li>
+	        		<li><a {{ page.projects }} href="/project_portfolio">Project Portfolio</a></li>
+				<li><a {{ page.resume }} href="/resume">Resume</a></li>
+				<li><a {{ page.music }} href="/music">Music</a></li>
+				<li><a {{ page.video-editing }} href="/video-editing">Video Editing</a></li>
 	        		<!-- <li><a href="/blog">Blog</a></li> -->
 				<!-- <li><a href="/writing">Writing</a></li> -->
 	    		</ul>
